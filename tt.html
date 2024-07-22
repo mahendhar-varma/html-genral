@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+      }
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        background-color: #032861;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .flex-item {
+        background-color: brown;
+        padding: 50px;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+      }
+      .pink-box {
+        background-color: rgb(252, 5, 121);
+      }
+      .green-box {
+        background-color: green;
+      }
+      .box {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        box-sizing: border-box;
+        height: 95%;
+      }
+      .child {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+      }
+
+      .bottom-text {
+        margin-top: auto;
+      }
+
+      .container1 {
+        height: 10vh;
+      }
+      .container2 {
+        height: 20vh;
+      }
+      .container3 {
+        height: 50vh;
+      }
+
+      h2,
+      h5,
+      p {
+        margin: 0;
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="container1">
+        <h2 style="text-align: center;color: brown;">Election results</h2>
+        <p style="text-align: center;color:brown">Today is the election results day</p>
+      </div>
+      <div class="flex-container container2">
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+      </div>
+      <div class="flex-container container3">
+        <div class="child">
+          <h5>Title1</h5>
+          <div class="pink-box box">
+            <p class="text-color" style="color: green;">Form Data</p>
+          </div>
+        </div>
+        <div class="child">
+          <h5>Title2</h5>
+          <div class="green-box box">
+            <p class="text-color bottom-text">Table Data</p>
+            <p class="text-color bottom-text">Copyright</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

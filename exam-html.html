@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Test</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .main-container {
+        background-image: url(images.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 99.5vh;
+        padding: 20px;
+        box-sizing: border-box;
+      } 
+      h1,
+      p {
+        text-align: center;
+        
+      }
+      .right-image {
+        float: right;
+        margin-left: 50px;
+      }
+      .left-image {
+        float: left;
+        margin-right: 50px;
+      }
+      .middle-image {
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+      }
+      .child-container {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+      }
+      .form-container,
+      .table-container {
+        background-color: #f5dcf2;
+        white-space: nowrap;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        flex-grow: 1;
+        overflow: auto;
+      }
+      .form-elements {
+        padding: 10px;
+      }
+      .table-container {
+        background-color: #2dab92;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        background-color: rgb(163, 255, 127);
+        border: 1px solid rgb(0, 0, 0);
+        padding: 8px;
+        white-space: nowrap;
+      }
+      footer {
+        background-color: #2dab92;
+        padding: 4px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container"style="margin:40px">
+      <h1><b>VEGETABLES</b></h1>
+      <p>Description about vegetables</p>
+      <div style="margin: 30px">
+        <img
+          class="right-image"
+          src="download.jpeg"
+          width="100"
+          height="100"
+          alt="Right Image"
+        />
+        <img
+          class="left-image"
+          src="images.jpeg"
+          width="100"
+          height="100"
+          alt="Left Image"
+        />
+        <img
+          class="middle-image"
+          src="download (1).jpeg"
+          width="100"
+          height="100"
+          alt="Middle Image"
+        />
+      </div>
+      <div class="container">
+        <div class="child-container">
+          <h5 style="display: inline; margin: 2px">Table Data</h5>
+          <div class="table-container">
+            <table>
+              <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Available till</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Tomato</td>
+                <td>20 kgs</td>
+                <td>26-06-2024</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Brinjal</td>
+                <td>25 kgs</td>
+                <td>28-06-2024</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Carrot</td>
+                <td>20 kgs</td>
+                <td>30-06-2024</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Onion</td>
+                <td>10 kgs</td>
+                <td>27-06-2024</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Potato</td>
+                <td>30 kgs</td>
+                <td>25-06-2024</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Bottle Guard</td>
+                <td>50 kgs</td>
+                <td>28-06-2024</td>
+              </tr>
+            </table>
+            <footer>
+              Copy right 2024, DUMMY DATA ADDED BY -Mahesh</small>
+            </footer>
+          </div>
+        </div>
+        <div class="child-container">
+          <h5 style="display: inline; margin: 2px">Form Data</h5>
+          <div class="form-container">
+            <form>
+              <div class="form-elements">
+                <label>Search Name:</label>
+                <input type="text" placeholder="Enter Name" />
+              </div>
+              <div class="form-elements">
+                <label>No of Items:</label>
+                <input type="number" placeholder="Enter Count" />
+              </div>
+              <div class="form-elements">
+                <label>Choose Mode:</label>
+                <input type="radio" name="mode" />
+                <label>Online</label>
+                <input type="radio" name="mode" />
+                <label>Offline</label>
+              </div>
+              <div class="form-elements">
+                <label>Date:</label>
+                <input type="date" />
+              </div>
+              <div class="form-elements">
+                <input type="submit" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
